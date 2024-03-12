@@ -13,7 +13,6 @@ import ProductDetail from "./components/products/productDetail/ProductDetail";
 import { useState } from "react";
 import Checkout from "./components/checkout/Checkout";
 
-
 const App = () => {
   const [cart, setCart] = useState([]);
   const [count, setCount] = useState(0);
@@ -21,7 +20,6 @@ const App = () => {
   return (
     <div>
       <Navbar cart={cart} />
-
       <Switch>
         <Route path="/index" component={Home} />
         <Route path="/about" component={About} />
@@ -43,7 +41,6 @@ const App = () => {
         <Route path="/checkout" component={Checkout} />
       </Switch>
       <Footer />
-     
     </div>
   );
 };
